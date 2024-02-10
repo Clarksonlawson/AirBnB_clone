@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Console script for the AirBnB Clone Entry"""
 import cmd
 import re
@@ -50,7 +49,7 @@ class HBNBCommand(cmd.Cmd):
         
         if len(argument) == 0:
             print("** class name missing **")
-        elif argument[0] not in HBNBCommand.__classes:
+        elif argument[0] not in HBNBCommand.__OBJclasses:
             print("** class doesn't exist **")
         else:
             print(eval(argument[0])().id)
@@ -66,7 +65,7 @@ class HBNBCommand(cmd.Cmd):
 
         if len(argument1) == 0:
             print("** class name missing **")
-        elif argument1[0] not in HBNBCommand.__classes:
+        elif argument1[0] not in HBNBCommand.__OBJclasses:
             print("** class doesn't exist **")
         elif len(argument1) == 1:
             print("** instance id missing **")
@@ -83,7 +82,7 @@ class HBNBCommand(cmd.Cmd):
 
         if len(argument1) == 0:
             print("** class name missing **")
-        elif argument1[0] not in HBNBCommand.__classes:
+        elif argument1[0] not in HBNBCommand.__OBJclasses:
             print("** class doesn't exist **")
         elif len(argument1) == 1:
             print("** instance id missing **")
@@ -100,7 +99,7 @@ class HBNBCommand(cmd.Cmd):
 
         argument1 = regParser(argument)
 
-        if len(argument1) > 0 and argument1[0] not in HBNBCommand.__classes:
+        if len(argument1) > 0 and argument1[0] not in HBNBCommand.__OBJclasses:
             print("** class doesn't exist **")
         else:
             objects = []
@@ -122,7 +121,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return False
         
-        if argument[0] not in HBNBCommand.__classes:
+        if argument[0] not in HBNBCommand.__OBJclasses:
             print("** class doesn't exist **")
             return False
         
