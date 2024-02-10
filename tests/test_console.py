@@ -21,33 +21,35 @@ from io import StringIO
 from unittest.mock import patch
 
 
-class TestHBNBCommand_prompting(unittest.TestCase):
-    """Unittests for testing prompting of the HBNB command interpreter."""
+class TestPrompt(unittest.TestCase):
+    """Tests for the Prompts"""
 
-    def test_prompt_string(self):
+    def test_prompt(self):
         self.assertEqual("(hbnb) ", HBNBCommand.prompt)
 
-    def test_empty_line(self):
-        with patch("sys.stdout", new=StringIO()) as output:
+    def test_emptyLine(self):
+        with patch("sys.stdout", new=StringIO()) as out:
             self.assertFalse(HBNBCommand().onecmd(""))
-            self.assertEqual("", output.getvalue().strip())
+            self.assertEqual("", out.getvalue().strip())
 
 
-class TestHBNBCommand_help(unittest.TestCase):
-    """Unittests for testing help messages of the HBNB command interpreter."""
+class TestHelpCommands(unittest.TestCase):
+    """Test for the Help Commands"""
 
-    def test_help_quit(self):
-        h = "Quit command to exit the program."
-        with patch("sys.stdout", new=StringIO()) as output:
+    def test_HelpQuit(self):
+        outText = "Quit command to exit the program."
+
+        with patch("sys.stdout", new=StringIO()) as out:
             self.assertFalse(HBNBCommand().onecmd("help quit"))
-            self.assertEqual(h, output.getvalue().strip())
+            self.assertEqual(outText, out.getvalue().strip())
 
-    def test_help_create(self):
-        h = ("Usage: create <class>\n        "
+    def test_helpCreate(self):
+        outText = ("Usage: create <class>\n        "
              "Create a new class instance and print its id.")
-        with patch("sys.stdout", new=StringIO()) as output:
+        
+        with patch("sys.stdout", new=StringIO()) as out:
             self.assertFalse(HBNBCommand().onecmd("help create"))
-            self.assertEqual(h, output.getvalue().strip())
+            self.assertEqual(outText, out.getvalue().strip())
 
     def test_help_EOF(self):
         h = "EOF signal to exit the program."
