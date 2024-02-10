@@ -1,8 +1,10 @@
+#!/usr/bin/python3
+
 """Helper function for the parsing of the program """
 import re
 from shlex import split
 
-def parse(arg):
+def regParser(arg):
     """Parses the program and break it down to
     tokens of arguments"""
 
