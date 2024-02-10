@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-"""Model definition for AirBnB State Class"""
+"""Defines the State class."""
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """State class definition
+    """Represent a state.
+
     Attributes:
-        name (str): State name
+        name (str): The name of the state.
     """
+
     name = ""
