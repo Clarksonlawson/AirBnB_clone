@@ -16,7 +16,7 @@ from models.amenity import Amenity
 from models.review import Review
 
 
-class TestFileStorage_instantiation(unittest.TestCase):
+class TestInstantiations(unittest.TestCase):
     """Testing the Instantiation Class"""
 
     def test_InstanceNoArgument(self):

@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 """Defines unittests for models/state.py.
-
-Unittest classes:
-    TestState_instantiation
-    TestState_save
-    TestState_to_dict
 """
 import os
 import models
@@ -14,7 +9,7 @@ from time import sleep
 from models.state import State
 
 
-class TestState_instantiation(unittest.TestCase):
+class TestStateInstance(unittest.TestCase):
     """Testing State Instantiation"""
 
     def test_zeroArguments(self):

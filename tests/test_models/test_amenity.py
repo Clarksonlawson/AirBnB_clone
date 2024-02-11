@@ -9,7 +9,7 @@ from time import sleep
 from models.amenity import Amenity
 
 
-class TestAmenity_instantiation(unittest.TestCase):
+class TestInstantiationsAmenity(unittest.TestCase):
     """Test for Insttantiations."""
 
     def test_noArguments(self):

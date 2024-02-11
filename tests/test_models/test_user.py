@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 """Tests for the User Class.
-
-Unittest classes:
-    TestUser_instantiation
-    TestUser_save
-    TestUser_to_dict
 """
 import os
 import models
