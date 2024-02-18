@@ -1,18 +1,4 @@
-@media only screen and (max-width: 600px) {
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
 .places {
   display: flex;
   flex-wrap: wrap;
@@ -87,9 +73,7 @@ article:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.2s ease-in-out;
 }
-/* ******************************************/
-/* information box with icons */
-/* ******************************************/
+
 
 .information {
   width: 100%;
@@ -134,9 +118,7 @@ article:focus {
   text-align:center;
 }
 
-/*******************************************/
-/* more information */
-/*******************************************/
+
 .places .amenities,
 .places .reviews {
   margin-top: 40px;
@@ -164,9 +146,7 @@ article:focus {
 .places .reviews p {
   font-size: 12px;
 }
-/*******************************************/
-/* amenities icons */
-/*******************************************/
+
 .places .amenities ul li{
   display: flex;
   flex-direction: row;
@@ -193,4 +173,20 @@ article:focus {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 }

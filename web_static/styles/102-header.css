@@ -1,18 +1,4 @@
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) */
-header {
-  z-index: 4;
-  color: #fff;
-  height: 3.5rem;
-  width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  float: left;
-  text-align: left;
-}
+
 /*****************************************************************/
 /* rotate burguer
 /*****************************************************************/
@@ -77,6 +63,7 @@ input {
   font-weight: bold;
   transition: .5s ease-in-out;
 }
+
 /* hover link menu */
 .nav_bar_level1 li label span:hover,
 ul li span:hover
@@ -100,6 +87,22 @@ ul li span:hover
   transition: 1s ease-in-out;
 }
 
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) */
+header {
+  z-index: 4;
+  color: #fff;
+  height: 3.5rem;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  float: left;
+  text-align: left;
+}
+
 /*display second level */
 #second_check:checked  + ul{
   display: block;
@@ -121,6 +124,7 @@ ul li span:hover
     display: none;
   }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 

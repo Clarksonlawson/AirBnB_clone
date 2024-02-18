@@ -1,3 +1,7 @@
+
+/* ************************************************** */
+/* Area for Places information */
+/* ************************************************** */
 .places {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +38,7 @@ article {
   flex-wrap: wrap;
 }
 /* ************************************************** */
-/* article information */
+/* Area for article information */
 /* ************************************************** */
 
 /* circle with price */
@@ -59,7 +63,7 @@ article {
 }
 
 /* ******************************************/
-/* information box with icons */
+/* Area for information box with icons */
 /* ******************************************/
 
 .information {
@@ -79,7 +83,7 @@ article {
   padding: 0;
 }
 /***********/
-/* icons   */
+/* Area for icons   */
 
 .max_guest {
   background-image: url(../images/icon_group.png);
@@ -105,7 +109,7 @@ article {
 }
 
 /*******************************************/
-/* more information */
+/* Area for more information */
 /*******************************************/
 
 .places .amenities,
@@ -136,7 +140,7 @@ article {
   font-size: 12px;
 }
 /*******************************************/
-/* amenities icons */
+/* Area for amenities icons */
 /*******************************************/
 .places .amenities ul li{
   display: flex;

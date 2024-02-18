@@ -1,3 +1,6 @@
+/* ************************************************** */
+/* Area for places information */
+/* ************************************************** */
 .places {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +34,7 @@
   flex-grow: 1;
 }
 /* ************************************************** */
-/* article information */
+/* Area for article information */
 /* ************************************************** */
 
 /* circle with price */
@@ -55,7 +58,7 @@
 }
 
 /* ******************************************/
-/* information box with icons */
+/* Area for information box with icons */
 /* ******************************************/
 
 .information {
@@ -102,13 +105,13 @@
 }
 
 /*******************************************/
-/* more information */
+/* Area for more information */
 /*******************************************/
 .places .amenities,
-.places .reviews {
+.places .reviews { 
+  height: inherit;
   margin-top: 40px;
   width: 100%;
-  height: inherit;
 }
 
 .places .amenities ul,
@@ -118,10 +121,10 @@
 }
 
 .places .amenities h2,
-.places .reviews h2 {
-  font-size: 16px;
+.places .reviews h2 {  
   text-align: left;
   border-bottom: 1px solid #DDDDDD;
+  font-size: 16px;
 }
 
 .places .reviews h3 {
@@ -132,7 +135,7 @@
   font-size: 12px;
 }
 /*******************************************/
-/* amenities icons */
+/* Area for amenities icons */
 /*******************************************/
 .places .amenities ul li{
   display: flex;
@@ -156,8 +159,9 @@
 .places_amenities_pet_friendly,
 .places_amenities_tv,
 .places_amenities_wifi {
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
